@@ -1,4 +1,4 @@
-//3116. Kth Smallest Amount With Single Denomination Combination: https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/description/
+//LC.3116. Kth Smallest Amount With Single Denomination Combination: https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/description/
 import java.util.*;
 public class F {
         
