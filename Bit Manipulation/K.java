@@ -10,12 +10,12 @@ public class K {
      public int minKBitFlips1(int[] nums, int k) {
         int n = nums.length;
 
-        int flips = 0;
-        boolean[] isFlipped = new boolean[n];
-        int flipCountFromPastForCurri = 0;
+        int flips = 0;                          // total number of flips performed
+        boolean[] isFlipped = new boolean[n];  // isFlipped[i] == true means: we started a K-length flip at index i
+        int flipCountFromPastForCurri = 0;    // how many flips from the past are currently affecting index i (only the count parity matters)
 
         for (int i = 0; i < n; i++) {
-            if (i >= k && isFlipped[i - k]) {
+            if (i >= k && isFlipped[i - k]) {    // Remove flips that no longer affect i
                 flipCountFromPastForCurri--;
             }
 
